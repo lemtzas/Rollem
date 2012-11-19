@@ -1,0 +1,3 @@
+places.yml = servers, channels, nicks, passwords
+config.yml = behavior configuration (per server.channel)
+admins.yml = server.channel.admins
