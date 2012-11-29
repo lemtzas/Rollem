@@ -27,7 +27,7 @@ module Rollem
           c.port = server_data[:port] if not server_data[:port].nil?
           c.channels = channels
           c.nick = nickname
-          c.plugins.plugins = [Cinch::Plugins::RollemDicebox,
+          c.plugins.plugins = [Cinch::Plugins::Dicebox,
                                Cinch::Plugins::Identify,
                                Cinch::Plugins::PluginManagement,
                                Cinch::Plugins::UrlTitle]

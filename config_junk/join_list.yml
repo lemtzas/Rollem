@@ -19,15 +19,15 @@ defaults:
   password: mydicebringalltheboystotheyard
 
 servers:
-#  freenode:
-#    channels:
-#      - '#uwtgig'
-#      - '##nerdchat'
+  freenode:
+    channels:
+      - '#uwtgig'
+      - '##nerdchat'
   esper:
     channels:
       - '#ThePond'
-#      - '#rphaven'
-#  snoonet:
-#    channels:
-#      - '#DnD'
-#      - '#rpg'
+      - '#rphaven'
+  snoonet:
+    channels:
+      - '#DnD'
+      - '#rpg'
