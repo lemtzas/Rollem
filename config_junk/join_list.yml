@@ -14,19 +14,19 @@
 #
 
 defaults:
-  nickname: 'LemBot'
+  nickname: 'Rollem'
   authtype: !ruby/nickserv
   password: mydicebringalltheboystotheyard
 
 servers:
-  freenode:
-    channels:
-      - '#uwtgig'
-      - '##nerdchat'
+#  freenode:
+#    channels:
+#      - '#uwtgig'
+#      - '##nerdchat'
   esper:
     channels:
       - '#ThePond'
-      - '#rphaven'
+#      - '#rphaven'
 #  snoonet:
 #    channels:
 #      - '#DnD'

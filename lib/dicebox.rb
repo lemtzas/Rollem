@@ -44,7 +44,7 @@ module Rollem
                                         end
                                         drop = 0 if not drop
                                         puts "roll(" + qty.to_s + "," + die.to_s + "," + drop.to_s + ")" + keep.to_s
-                                        text,val = Rollem::Dicebox::Roll::roll(qty,die,drop)
+                                        text,val = self.roll(qty,die,drop)
                                         #text,val = "5",5
                                         out += text
                                         sout.replace out
@@ -62,7 +62,7 @@ module Rollem
                                         if split[0].length == 0
                                           split[0] = "1"
                                         end
-                                        text,val = Rollem::Dicebox::Roll::roll(split[0].to_i,split[1].to_i)
+                                        text,val = self.roll(split[0].to_i,split[1].to_i)
                                         puts "#" + val.to_s
                                         #text,val = "5",5
                                         out += text

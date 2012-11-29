@@ -5,7 +5,7 @@ require 'cinch/plugins/identify'
 require "./lib/plugins/plugin_management"
 require "./lib/plugins/search"
 require './lib/plugins/url_title'
-require './lib/plugins/rdb'
+require './lib/plugins/dicebox'
 
 
 #contains relevant server info

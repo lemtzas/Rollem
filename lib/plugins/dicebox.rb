@@ -4,7 +4,7 @@ require './lib/shunting-yard'
 
 module Cinch
   module Plugins
-    class RollemDicebox
+    class Dicebox
       include Cinch::Plugin
 
       @prefix = '' #kill that shitty prefix
