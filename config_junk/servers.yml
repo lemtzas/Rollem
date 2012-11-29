@@ -1,0 +1,37 @@
+#format is
+# server_id:
+#   aliases:
+#     - alias 1
+#     - alias 2
+#   servers:
+#     - a.server.ip
+#     - a.server.ip:port
+#     - a.server.ip:port|ssl        #NOT YET SUPPORTED
+
+freenode:
+  aliases:
+    - freenode.net
+    - irc.freenode.net
+  servers:
+    - irc.freenode.net
+
+esper:
+  aliases:
+    - espernet
+    - esper.net
+    - irc.esper.net
+    - irc.espernet
+  servers:
+    - irc.esper.net
+
+snoonet:
+  aliases:
+    - reddit
+    - snoo.net
+    - snoonet.org
+    - snoonet.com
+    - irc.snoonet.org
+    - irc.snoonet.com
+  servers:
+    - irc.snoonet.org
+

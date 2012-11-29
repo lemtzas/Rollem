@@ -1,0 +1,33 @@
+#format
+# defaults:
+#   nickname: 'name'
+#   authtype: ':nickserv'
+#   password: 'nope'
+# servers:
+#   server_id:
+#     channels:
+#       - '#test'
+#     nickname: 'name'
+#     authtype: !ruby/nickserv
+#     password: 'nope'
+#
+#
+
+defaults:
+  nickname: 'LemBot'
+  authtype: !ruby/nickserv
+  password: mydicebringalltheboystotheyard
+
+servers:
+  freenode:
+    channels:
+      - '#uwtgig'
+      - '##nerdchat'
+  esper:
+    channels:
+      - '#ThePond'
+      - '#rphaven'
+#  snoonet:
+#    channels:
+#      - '#DnD'
+#      - '#rpg'
