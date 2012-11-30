@@ -15,7 +15,7 @@
 
 defaults:
   nickname: 'Rollem'
-  authtype: !ruby/nickserv
+  authtype: nickserv
   password: mydicebringalltheboystotheyard
 
 servers:

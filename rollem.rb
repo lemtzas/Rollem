@@ -74,7 +74,7 @@ module Rollem
         password = d_password if password.nil?
         channels = entry["channels"]
         @instances[server] = RollemBot.new(@server_id_to_data[server][0],
-                                           channels,nickname,authtype,password)
+                                           channels,nickname,authtype.to_s.to_sym,password.to_s)
       end
     end
 
