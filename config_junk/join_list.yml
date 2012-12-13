@@ -1,33 +1,8 @@
-#format
-# defaults:
-#   nickname: 'name'
-#   authtype: ':nickserv'
-#   password: 'nope'
-# servers:
-#   server_id:
-#     channels:
-#       - '#test'
-#     nickname: 'name'
-#     authtype: !ruby/nickserv
-#     password: 'nope'
-#
-#
-
+---
 defaults:
-  nickname: 'Rollem'
-  authtype: nickserv
-  password: mydicebringalltheboystotheyard
-
+  nickname: RolledEm
 servers:
-  freenode:
-    channels:
-      - '#uwtgig'
-      - '##nerdchat'
   esper:
     channels:
-      - '#ThePond'
-      - '#rphaven'
-  snoonet:
-    channels:
-      - '#DnD'
-      - '#rpg'
+    - ! '#ThePond'
+    - ! '#rollem'

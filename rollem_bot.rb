@@ -6,15 +6,16 @@ require "./lib/plugins/plugin_management"
 require "./lib/plugins/search"
 require './lib/plugins/url_title'
 require './lib/plugins/dicebox'
+require './lib/plugins/channels'
 
 
 #contains relevant server info
-ServerData = Struct.new(:address, :port)
+ServerData = Struct.new(:name,:address,:port)
 
 module Rollem
   #RollemBot contains enhancements to Cinch::Bot
   class RollemBot
-    attr_reader :thread
+    attr_reader :bot,:thread
     @bot
     @thread
 
@@ -30,7 +31,8 @@ module Rollem
           c.plugins.plugins = [Cinch::Plugins::Dicebox,
                                Cinch::Plugins::Identify,
                                Cinch::Plugins::PluginManagement,
-                               Cinch::Plugins::UrlTitle]
+                               Cinch::Plugins::UrlTitle,
+                               Cinch::Plugins::Channels]
           c.plugins.options[Cinch::Plugins::Identify] = {
               :username => nickname,
               :password => password,

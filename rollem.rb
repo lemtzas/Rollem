@@ -42,7 +42,7 @@ module Rollem
             address = input[0]
             port    = input[1].to_i if input[1]
             #puts key + ": " + address + " " + port.to_s
-            s = ServerData.new(address,port)
+            s = ServerData.new(key,address,port)
             puts s[:address]
             puts s[:port]
             Test.new(s)
@@ -96,6 +96,39 @@ module Rollem
 
     def alias_to_id(dat_alias)
       @server_alias_to_id[dat_alias]
+    end
+
+    def join_channel(server,channel)
+      id = server_to_id(server)
+      puts "server: " + server.inspect
+      puts "id: " + id.inspect
+      puts "instances: "+ @instances.inspect
+      @instances[id].bot.join(channel)
+      yaml = YAML.load(File.open( 'config_junk/join_list.yml' ))
+      yaml['servers'] = Hash.new if not yaml['servers']           #make sure there's a "servers"
+      yaml['servers'][id] = Hash.new if not yaml['servers'][id]   #make sure there's a "servers.{id}"
+      yaml['servers'][id]['channels'] = Array.new if not yaml['servers'][id]['channels']
+                                                                  #make sure there's a "servers.{id}.channels"
+      yaml['servers'][id]['channels'].push(channel)
+      File.open('config_junk/join_list.yml', "w") {|file| file.puts(yaml.to_yaml) }
+    end
+
+    def leave_channel(server,channel)
+      id = server_to_id(server)
+      @instances[id].bot.part(channel)
+      #TODO: Remove from autojoin
+    end
+
+    ##Converts a server to an id.
+    ##Server may be an ID, Alias, or bot object
+    def server_to_id(server)
+      if server.kind_of? String
+        id = @server_alias_to_id[server]
+        return "Invalid Server" if not id
+      else
+        id = @instances.key(server) #If it's not a string, assume it's a bot object, reverse lookup id
+      end
+      id
     end
   end
 end
