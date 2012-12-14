@@ -8,6 +8,10 @@ module Rollem
     #stores a mapping of server_id => rollem instance
     @instances
 
+    #Instances of Underlying Cinch Bots
+    #stores a mapping of cinch bot => server id
+    @cinch_bot_to_id
+
     #Alias mapping
     #stores a mapping of alias => server id
     @server_alias_to_id
@@ -56,6 +60,7 @@ module Rollem
     #creates all needed cinch wrapper objects
     def create_cinch_army()
       @instances = Hash.new
+      @cinch_bot_to_id = Hash.new
 
       servers = YAML.load(File.open( 'config_junk/join_list.yml' ))
       defaults = servers["defaults"]
@@ -75,6 +80,7 @@ module Rollem
         channels = entry["channels"]
         @instances[server] = RollemBot.new(@server_id_to_data[server][0],
                                            channels,nickname,authtype.to_s.to_sym,password.to_s)
+        @cinch_bot_to_id[@instances[server].bot] = server
       end
     end
 
@@ -100,33 +106,42 @@ module Rollem
 
     def join_channel(server,channel)
       id = server_to_id(server)
-      puts "server: " + server.inspect
-      puts "id: " + id.inspect
-      puts "instances: "+ @instances.inspect
       @instances[id].bot.join(channel)
       yaml = YAML.load(File.open( 'config_junk/join_list.yml' ))
       yaml['servers'] = Hash.new if not yaml['servers']           #make sure there's a "servers"
       yaml['servers'][id] = Hash.new if not yaml['servers'][id]   #make sure there's a "servers.{id}"
       yaml['servers'][id]['channels'] = Array.new if not yaml['servers'][id]['channels']
                                                                   #make sure there's a "servers.{id}.channels"
-      yaml['servers'][id]['channels'].push(channel)
+      yaml['servers'][id]['channels'].push(channel.downcase)
       File.open('config_junk/join_list.yml', "w") {|file| file.puts(yaml.to_yaml) }
     end
 
     def leave_channel(server,channel)
       id = server_to_id(server)
+      puts "server: " + server.inspect
+      puts "id: " + id.inspect
+      puts "instances: "+ @instances.inspect
       @instances[id].bot.part(channel)
-      #TODO: Remove from autojoin
+      yaml = YAML.load(File.open( 'config_junk/join_list.yml' ))
+      puts yaml.inspect
+      yaml['servers'] = Hash.new if not yaml['servers']           #make sure there's a "servers"
+      yaml['servers'][id] = Hash.new if not yaml['servers'][id]   #make sure there's a "servers.{id}"
+      yaml['servers'][id]['channels'] = Array.new if not yaml['servers'][id]['channels']
+                                                                  #make sure there's a "servers.{id}.channels"
+      yaml['servers'][id]['channels'].delete(channel.downcase)
+      puts yaml.inspect
+      File.open('config_junk/join_list.yml', "w") {|file| file.puts(yaml.to_yaml) }
     end
 
     ##Converts a server to an id.
     ##Server may be an ID, Alias, or bot object
     def server_to_id(server)
       if server.kind_of? String
+        puts "forward lookup"
         id = @server_alias_to_id[server]
-        return "Invalid Server" if not id
       else
-        id = @instances.key(server) #If it's not a string, assume it's a bot object, reverse lookup id
+        puts "reverse lookup"
+        id = @cinch_bot_to_id[server] #If it's not a string, assume it's a bot object, reverse lookup id
       end
       id
     end
