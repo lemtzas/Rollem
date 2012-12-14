@@ -7,6 +7,7 @@ module Cinch
       include Cinch::Plugin
       match /(?i)join(?:\s([A-Za-z0-9_]+))?(?:\s(#[#A-Za-z0-9_]+))/, method: :join
       match /(?i)leave(?:\s([A-Za-z0-9_]+))?(?:\s(#[#A-Za-z0-9_]+))?/, method: :leave
+      match /(?i)nick\s([A-Za-z0-9_]+)/, method: :nick
 
       def join(m,server,channel)
         m.reply("Acknowledged! Joining '#{server}#{channel}'")
@@ -37,6 +38,11 @@ module Cinch
         else
           m.reply("Cross-server operations not supported!")
         end
+      end
+
+      def nick(m,nick)
+        m.reply("Operation not yet supported!")
+        #m.bot.set_nick(nick)
       end
     end
   end
