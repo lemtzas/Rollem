@@ -41,8 +41,8 @@ module Cinch
       end
 
       def nick(m,nick)
-        m.reply("Operation not yet supported!")
-        #m.bot.set_nick(nick)
+        #m.reply("Operation not yet supported!")
+        m.bot.set_nick(nick)
       end
     end
   end
