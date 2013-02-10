@@ -1,0 +1,61 @@
+﻿#The Rules! Shuffle the Adventure Deck at the start of each game session. Deal one card to each player for each of his character's Ranks (e.g. two for Seasoned, five for Legendary).
+#Cards which give you an additional draw give you an additional play of your remaining cards as well.
+#Players may trade cards at any time, but may not just *give* them away. Players can use these cards at any time as spelled out on the individual cards.
+#Discard unused cards after each game session.
+#New Edge! Add the following Background Edge if you use the Adventure Deck. If additing it to an existing game, we suggest you allow players the opportunity to select Destiny's Child on the their next Advance and limit it as normal afterwards.
+#Destiny's Child: Requirements: Novice
+#Your hero is favored by Destiny. He gets to draw and play an additional Adventure Card each game session.
+Ace: "Never tell me the odds." Play instead of rolling to make a trait test with a single automatic raise
+Adrenaline Surge: "Whoa! He went Matrix on 'em!" Your hero gets an additional and immediate turn (including new movement)
+Angry Mob: "Burn the witch!" Play during combat. A mob of angry locals equal to 2 per hero joins the battle as Allies. Treat tem as Soldiers armed with whatever the GM deems appropriate. They stay for the current battle only
+Arcane Inspiration: "I have no idea how I managed that." Immediately recover all spent Power Points
+Arcane Spike: "This ends now!" A character with an Arcane Background may activate a damage-causing power they cold normally use. This activation costs no Power Points and deals double damage. The character must make a Vigor roll at -2 or suffer a level of Fatigue
+Better You Than Me: "Fritz! They shot Fritz!" Play when your hero has been hit by an attack and there is an adjacent character. The other character suffers the attack instead. This may be played on friend or foe
+Bullseye!: "Even plate mail has eyeslits." Play after damage is rolled to double the total of a successful ranged attack
+Catnap: "All I needed was a little shut-eye!" Play when a character has at least a half hour of undisturbed downtime to restore a character as if she had a full night's rest. This restores all Power Points and removes all Fatigue
+Contact: "Reggie, you old scoundrel. How've you been?" Your hero sees an old friend or acquaintance who might help him in his current quest somehow. Of course, he may also ask for a favor in return
+Deadly Blow: "Oooh! That'll leave a mark!" Play after damage is rolled to double the total of a successful melee attack
+Dressed To Kill: "Wow. You clean up nice, kid." Your hero dresses up, is "on" for the night, or otherwise far more attractive or charismatic than usual. Add +4 to your Charisma for the duration of the current "scene"
+Enemy: "We meet again." Play at the beginning of the game session. A villain of the GM's choice becomes your character's sworn enemy. You may not soak wounds caused directly by him. Starting now, draw an extra Adventure Card each game session until the enemy is "retired"
+Epiphany: "Beginner's luck." Something you never understood before suddenly "clicks". You gain a d6 in any skill you previously did not have for the remainder of this game session
+Extra Effort: "Impressive! Most impressive!" Play to add +1d6 to any trait roll. This roll may Ace
+Flesh Wound: "Get up, Hicks. You ain't foolin' anyone." Play to cause a wounded Extra to rise immediately, un-Shaken and unharmed. The Extra must have been wounded in the current "scene" (typically a combat or immediately thereafter.)
+Folk Hero: "She robbed from the rich and gave to the poor..." Play after you save a group of people from dire circumstances. The community adopts you and your party as local heroes, and you can always find aid there
+Get A Clue: "Wait! I've got an idea!" Play this card for a clue from the Game Master for some advice or a hint on how to resolve a current predicament or problem
+Get Savage!: "I have no idea how I did that." For the duration of one combat or scene, your character gains the benefit of any one Edge, regardless of requirements
+Here Comes The Cavalry: "I thought you guys would never get here." Help arrives on the scene from some source determined by the GM
+Hidden Stash: "You need an allen wrench? In the middle of the desert? Yeah, I think I can do that." Your hero scrounges up a generic type of item of your choosing, such as food and water, shelter, a box of ammo, enough money for a room, etc
+Hot Iron And Whiskey: "Here, bite on this." Play on a wounded character. He has one wound healed, but gains a permanent scar. Roll on the Injury Table in the Savage Worlds core book for location. He gains -1 Charisma if the scar is visible
+Inspiration: "We only have one shot at this. It's all or nothing, gang." Friendly characters (including your hero) add +2 to all trait rolls for the rest of the round
+Last Stand: "Stand together now!" Your hero and any adjacent allies gain +2 Parry and Toughness. Allies who move into contact after the card is played gain the bonus as well. The effect ends when a Joker is dealt
+Let's Settle This: "You gonna skin that smokewagon or just stand there and bleed?" Play at the beginning of a combat round with no Jokers. No character can soak wounds until a joker is drawn
+Love Interest: "Come here often?" Play on a nonplayer character to encourage a romantic interest for your hero. The target helps to the best of her abilities, but may frequently cause trouble as well
+Lucky Break: "Thank God I had this silver flash in my shirt pocket!" Play this card to completely negate the damage from one attack
+Make No Mistake: "It's not revenge he's after. It's a reckonin'." Play when facing any kind of creature with Immunity or Invulnerabilit. One character may ignore those special abilities of the creature for the duration of the combat
+Mechanical Malfunction "Sproing!" A device malfunctions in some way: guns jam, bow strings break, etc. The device can be fixed by a Repair roll at -4 and 10 minutes' work
+Noble Sacrifice "Gotta take one for the team..." Play when an adjacent ally suffers damage. You suffer the damage instead
+Not Today: "Missed me. Now it's my turn." Play after any other character's attack roll to cause it to automatically fail. This is a critical failure
+Out Of The Frying Pan: "Quick! Down this garbage chute!" Play to avoid death, capture, or some other bad situation for your hero or any ally. The situation leads to some new trouble, however, as determined by the GM
+Parley: "I call on the ancient rite of Parley!" All characters cease fighting and listen to the hero speak for at least 30 seconds. Others may only take defensive actions during this time. This has no effect on beasts and other creatures that cannot understand the speaker
+Payback: "This is for my father!" Play on an opposing Wild Card. Your attacks and damage against him are made at +2 for the duration of the scene
+Peace: "Wait, I know that guy..." Your hero is able to improve the attitude of a group in an encounter, perhaps by recognizing someone in the crowd, showing respect, or offering a bribe. It doesn't work on true enemies��only "neutrals" who happen to cross paths with your party
+Perfect Timing: "By then, it was too late." Pay a benny o search through the remaining Adventure Deck and take any one card of your choice
+Power Surge: "Whoa! Where'd that come from?" The character immediately covers 2d6 Power Points. These points may exceed his usual limit, but any excess points are lost at the end of the current encounter
+Rally: "To me!" Play to cause all allies in sight or hearing to immediately lose their Shaken status
+Reinforcements: "They're everywhere! Game over, man!" Play during combat. Reinforcements arrive for the bad guys. The exact number and type is up to the GM. Every player character may immediately draw an Adventure Card
+Renown: "You're the one who defeated the Dragon of Innsburg?" Play after completing a good deed of some import. You gain a permanent +1 Charisma bonus toward those who have heard of you (typically a 50% chance)
+Revelation: "You aren't going to believe what I found out." Your hero finds all the information available when doing research, or realizes critical information when confronting some obstacle such as a monster's weakness, the answer to a riddle or cipher, etc
+Riled Up: "That hurt. Now it's my turn." Play aftter your hero sustains at least one wound. His attacks cause +2 damage for the remainder of the scene
+Rise Up! Rise Up!: "Lost sleep is a small price to pay for victory." Play if the group is surprised. All heroes ignore the surprise and are dealt in as usual
+Second Wind: "I'm feeling much better now." Play on your hero to automatically remove all wounds sustained in this combat (but not crippling injuries). If Shaken, he is un-Shaken now as well
+Sieze The Day!: "Out of my way!" The character acts as if he had drawn a Joker this combat round
+Shakin' In Their Boots: "I'm gonna' rip your head off and..." Play in a combat situation. Your character does or says something so horrific and intimidating that it brings the area to a standstill. All other characters, friend or foe, are Shaken
+Spill The Beans: "You don't wanna get her riled, amgio." The subject of your questioning tells you *everything* you want to know, whether by friendly persuasion, intimidation, or force
+Spurred On: "Ride hard and we should make it by sundown." The characters' travel distance is doubled for a day, or one character gains double Pace for one round
+Teamwork: "On my mark..." Your hero and any adjacent allies add +4 to their next trait rolls. The allies must be adjacent when the card is played to receive the bonus
+This Card Just Rules: Immediately give this card to the GM and draw two cards to replace it. You may still play only one card this session (barring Edges or other Adventure Cards)
+Turncoat: "How much are they paying you?" Your hero somehow convinces or bribes a minor foe to perform a small favor��such as helping the hero escape, revealing the location of the "boss", etc
+Uh-Oh: "We're gonna need a bigger boat." Play this card at the beginning of a combat. One foe you are facing (GM's choice) has its Size and Strength increased two steps. Every player gets to draw a card from the Adventure Deck
+Unexpected Insight: "I read about this once..." Your character watched or read something about a nonhuman creature he's currently fighting. He adds +2 to his attack and damage rolls against this type of creature for the rest of the session
+Villainous Verbosity: "Hah! You fools! Did you really think you could thwart such an ingenious plan?" Play to make an opposing Wild Card lose his next action by gloating or talking about his master plan
+Windfall: "Solid gold goodness!" Play when your hero searches an area for treasure, loots a fallen foe, etc. He finds evrything that can be found in that location. If rolling on a random table, the character gets the best possible result

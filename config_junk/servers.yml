@@ -35,3 +35,10 @@ snoonet:
   servers:
     - irc.snoonet.org
 
+ext3:
+  aliases:
+    - ext3.net
+    - irc.ext3.net
+  servers:
+    - irc.ext3.net
+

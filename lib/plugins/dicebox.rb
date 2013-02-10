@@ -9,7 +9,7 @@ module Cinch
 
       @prefix = '' #kill that shitty prefix
 
-      match $full_dice_regex
+      match $full_dice_regex2
       match /!statgen(?: (verbose))?.*/
       match "reload dice"
       match /shunt .*/
@@ -32,11 +32,16 @@ module Cinch
             end
             stats.sort! {|x,y| y <=> x}
             m.reply "#{m.user.to_s}, #{stats}"
-          when $full_dice_regex
-            dice = Rollem::Dicebox::Roll.new(m.message)
+          when $full_dice_regex2
+            res = Array.new
+            puts $~.to_s
+            $~.to_s.split(";").each do |roll|
+              puts roll
+              res.push Rollem::Dicebox::Roll.new(roll).to_s
+            end
             #m.reply "I would roll...but that would be useful"
             #m.reply "instead..." + dice.to_s
-            m.reply m.user.to_s + ", " + dice.to_s
+            m.reply m.user.to_s + ", " + res.join(" ; d")
           when /shunt .*/
             sr = shunt(m.message[6..-1])
             m.reply "shunt it! " + IRColor.grey.to_s + sr.to_s + IRColor.clear.to_s + ' => ' + IRColor.bold.to_s + calculate(sr).to_s

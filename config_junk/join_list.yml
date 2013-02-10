@@ -1,33 +1,33 @@
-#format
-# defaults:
-#   nickname: 'name'
-#   authtype: ':nickserv'
-#   password: 'nope'
-# servers:
-#   server_id:
-#     channels:
-#       - '#test'
-#     nickname: 'name'
-#     authtype: !ruby/nickserv
-#     password: 'nope'
-#
-#
-
+---
 defaults:
-  nickname: 'Rollem'
+  nickname: RolledEm
   authtype: nickserv
   password: mydicebringalltheboystotheyard
-
 servers:
-  freenode:
-    channels:
-      - '#uwtgig'
-      - '##nerdchat'
   esper:
     channels:
-      - '#ThePond'
-      - '#rphaven'
+    - ! '#ThePond'
+    - ! '#thepond'
+    - ! '#lemsa'
+    - ! '#thepond'
+    - ! '#thepond'
+    - ! '#rphaven'
+    - ! '#rollem'
+    - ! '#rphaven'
   snoonet:
     channels:
-      - '#DnD'
-      - '#rpg'
+    - ! '#DnD'
+    - ! '#foxes'
+    - ! '#foxes'
+    - ! '#notarealchannel'
+    - ! '#rpg'
+  freenode:
+    channels:
+    - ! '#uwtgig'
+    - ! '##nerdchat'
+    - ! '##nerdchat'
+    - ! '#cheesemaze'
+    - ! '#cheesemaze'
+    - ! '#cheesemaze'
+    - ! '#cheesemaze'
+    - ! '##jopgc'

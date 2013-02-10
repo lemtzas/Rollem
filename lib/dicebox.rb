@@ -9,6 +9,7 @@ reload './lib/ir_color'
 #$simple_regex = /^(\d)*d(\d)(d\d+|k\d+)?+[+-]((\d)*d(\d)+(d\d+|k\d+)?|\d+)/
 #whitespace woo
 $full_dice_regex = /^\s*\d*\s*d\s*\d+(d\s*\d+|k\s*\d+)?(\s*[+-]\s*(\s*\d*\s*d\s*\d+\s*(d\s*\d+|k\s*\d+)?|\s*\d+\s*))*/
+$full_dice_regex2 = /^\s*\d*\s*d\s*\d+(d\s*\d+|k\s*\d+)?(\s*[+-]\s*(\s*\d*\s*d\s*\d+\s*(d\s*\d+|k\s*\d+)?|\s*\d+\s*))*(;\s*\d*\s*d\s*\d+(d\s*\d+|k\s*\d+)?(\s*[+-]\s*(\s*\d*\s*d\s*\d+\s*(d\s*\d+|k\s*\d+)?|\s*\d+\s*))*)*/
 
 module Rollem
   module Dicebox
@@ -117,103 +118,6 @@ module Rollem
             end
           end
         end
-
-=begin
-        case troll  #REMINDER: THIS IS HERE FOR MULTIPLE ROLL TYPES
-          when $full_dice_regex
-            while (not troll.empty?) and i < 30 ; i += 1
-              case troll
-                when /^\d*d\d+/     #rolls
-                  @breakdown.push($~.to_s)
-                  troll = troll[$~.to_s.length .. -1]
-                  puts "match - #{$~.to_s} - #{troll}"
-                when /^\d+/         #constants
-                  @breakdown.push($~.to_s)
-                  troll = troll[$~.to_s.length .. -1]
-                  puts "match - #{$~.to_s} - #{troll}"
-                when /^\+/           #addition
-                  @breakdown.push($~.to_s)
-                  troll = troll[$~.to_s.length .. -1]
-                  puts "match - #{$~.to_s} - #{troll}"
-                when /^-/            #subtraction
-                  @breakdown.push($~.to_s)
-                  troll = troll[$~.to_s.length .. -1]
-                  puts "match - #{$~.to_s} - #{troll}"
-                else
-                  puts "ERROR PARSING BASIC ROLL"
-              end
-            end
-          else
-            puts "OH GOD, PANIC"
-        end
-
-        @output ="#{@roll} => "
-        total_roll = 0
-        action = :+
-
-        @breakdown.each do |e|
-          #TODO: process the matches here, perform rolls, and create the resulting string
-          case e
-            when /^\d*d\d+/      #rolls
-              split = e.to_s.split('d')
-              qty = 1
-              if split[0].length > 0
-                qty = split[0].to_i
-              end
-              die = split[1].to_i
-              minisum = 0
-              #Hides me brackets
-              #if rollyrollyrollroll.length > 1
-              @output += "["
-              if qty <= MAXIMUM_ROLLS and die <= MAXIMUM_DIE
-                rollyrollyrollroll = rollem(qty,die)
-                rollyrollyrollroll.each do |r|
-                  if r == die       #coloring
-                    @output += IRColor.bold.green.to_s + r.to_s + IRColor.clear.to_s
-                  elsif r == 1
-                    @output += IRColor.bold.red.to_s + r.to_s + IRColor.clear.to_s
-                  else
-                    @output += r.to_s
-                  end
-                  @output += ' + '
-                  minisum += r
-                end
-                if rollyrollyrollroll.length > 0
-                  @output = @output[0..-4] #truncate final ' + '
-                else
-                  @output += ">:("
-                end
-              else
-                @output += ">:("
-              end
-
-              #Hides me brackets
-              #if rollyrollyrollroll.length > 1
-                @output += "]"
-              #end
-              if action == :+
-                total_roll += minisum
-              else
-                total_roll -= minisum
-              end
-            when /^\d+/          #constants
-              @output += e.to_s
-              if action == :+
-                total_roll += e.to_i
-              else
-                total_roll -= e.to_i
-              end
-            when /^\+/           #addition
-              @output += ' + '
-              action = :+
-            when /^-/            #subtraction
-              @output += ' - '
-              action = :-
-            else
-              puts "ERROR: BOUNCING NEGATIVE METRES"
-          end
-        end
-=end
         @output = sout + " => " + IRColor.bold.to_s + sum.to_s + IRColor.clear.to_s
       end
 

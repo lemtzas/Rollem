@@ -7,6 +7,8 @@ require "./lib/plugins/search"
 require './lib/plugins/url_title'
 require './lib/plugins/dicebox'
 require './lib/plugins/channels'
+require './lib/plugins/quotes'
+require './lib/plugins/cards'
 
 
 #contains relevant server info
@@ -32,7 +34,9 @@ module Rollem
                                Cinch::Plugins::Identify,
                                Cinch::Plugins::PluginManagement,
                                Cinch::Plugins::UrlTitle,
-                               Cinch::Plugins::Channels]
+                               Cinch::Plugins::Channels,
+                               Cinch::Plugins::Quotes,
+                               Cinch::Plugins::Cards]
           c.plugins.options[Cinch::Plugins::Identify] = {
               :username => nickname,
               :password => password,
