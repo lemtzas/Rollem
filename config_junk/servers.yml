@@ -42,3 +42,15 @@ ext3:
   servers:
     - irc.ext3.net
 
+slashnet:
+  aliases:
+    - slashnet.org
+    - slash.net
+  servers:
+    - abstract.slashnet.org
+    - bees.slashnet.org
+    - moo.slashnet.org
+    - concrete.slashnet.org
+    - services.slashnet.org
+    - zoklet.slashnet.org
+    - irc.slashnet.org

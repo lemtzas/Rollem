@@ -1,6 +1,6 @@
 ---
 defaults:
-  nickname: RolledEm
+  nickname: Rollem
   authtype: nickserv
   password: mydicebringalltheboystotheyard
 servers:
@@ -10,10 +10,32 @@ servers:
     - ! '#thepond'
     - ! '#lemsa'
     - ! '#thepond'
-    - ! '#thepond'
     - ! '#rphaven'
     - ! '#rollem'
     - ! '#rphaven'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#thepond'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#artesof'
+    - ! '#thepond'
+    - ! '#thepond'
+    - ! '#thepond'
+    - ! '#yolo'
+    - ! '#ada'
+    - ! '#thepond'
+    - ! '#thepond'
   snoonet:
     channels:
     - ! '#DnD'
@@ -21,13 +43,25 @@ servers:
     - ! '#foxes'
     - ! '#notarealchannel'
     - ! '#rpg'
+    - ! '#notarealchannel'
+    - ! '#notarealchannel'
+    - ! '#notarealchannel'
+    - ! '#notarealchannel'
+    - ! '#notarealchannel'
+    - ! '#notarealchannel'
+    - ! '#rpg'
   freenode:
     channels:
     - ! '#uwtgig'
     - ! '##nerdchat'
-    - ! '##nerdchat'
-    - ! '#cheesemaze'
-    - ! '#cheesemaze'
-    - ! '#cheesemaze'
-    - ! '#cheesemaze'
     - ! '##jopgc'
+    - ! '#lemocracy'
+    - ! '##nerdchat'
+    - ! '##rpg'
+    - ! '##jesseh'
+    - ! '##jesseh'
+    - ! '#reddit'
+    - ! '#botparteh'
+  ext3:
+    channels:
+    - ! '#USS_Harbles'
