@@ -7,49 +7,15 @@ servers:
   esper:
     channels:
     - ! '#ThePond'
-    - ! '#thepond'
-    - ! '#lemsa'
-    - ! '#thepond'
     - ! '#rphaven'
     - ! '#rollem'
-    - ! '#rphaven'
     - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#thepond'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#artesof'
-    - ! '#thepond'
-    - ! '#thepond'
-    - ! '#thepond'
-    - ! '#yolo'
-    - ! '#ada'
-    - ! '#thepond'
-    - ! '#thepond'
   snoonet:
     channels:
     - ! '#DnD'
     - ! '#foxes'
-    - ! '#foxes'
-    - ! '#notarealchannel'
     - ! '#rpg'
     - ! '#notarealchannel'
-    - ! '#notarealchannel'
-    - ! '#notarealchannel'
-    - ! '#notarealchannel'
-    - ! '#notarealchannel'
-    - ! '#notarealchannel'
-    - ! '#rpg'
   freenode:
     channels:
     - ! '#uwtgig'
@@ -65,3 +31,6 @@ servers:
   ext3:
     channels:
     - ! '#USS_Harbles'
+  slashnet:
+    channels:
+    - ! '#savageworlds'
