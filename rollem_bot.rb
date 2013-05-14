@@ -9,6 +9,7 @@ require './lib/plugins/dicebox'
 require './lib/plugins/channels'
 require './lib/plugins/quotes'
 require './lib/plugins/cards'
+require './lib/plugins/help'
 
 
 #contains relevant server info
