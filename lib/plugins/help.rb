@@ -9,7 +9,7 @@ module Cinch
       match /(?i)help/, method: :help
       match /(?i)code|source/, method: :code
       match /(?i)owner/, method: :owner
-      match /(?i)bug|issue|issues|request|feature\srequest|/, method: :issues
+      match /(?i)bug|issue|issues|request|feature\srequest/, method: :issues
 
       @code_message
       @help_message
