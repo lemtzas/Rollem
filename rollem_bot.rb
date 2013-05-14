@@ -36,6 +36,7 @@ module Rollem
                                Cinch::Plugins::UrlTitle,
                                Cinch::Plugins::Channels,
                                Cinch::Plugins::Quotes,
+                               Cinch::Plugins::Help,
                                Cinch::Plugins::Cards]
           c.plugins.options[Cinch::Plugins::Identify] = {
               :username => nickname,
