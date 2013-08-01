@@ -45,7 +45,6 @@ ext3:
 slashnet:
   aliases:
     - slashnet.org
-    - slash.net
   servers:
     - abstract.slashnet.org
     - bees.slashnet.org
@@ -54,3 +53,9 @@ slashnet:
     - services.slashnet.org
     - zoklet.slashnet.org
     - irc.slashnet.org
+
+rizon:
+  aliases:
+    - rizon.net
+  servers:
+    - irc.rizon.net
