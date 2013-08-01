@@ -25,12 +25,12 @@ servers:
     - ! '##nerdchat'
     - ! '##rpg'
     - ! '##jesseh'
-    - ! '##jesseh'
     - ! '#reddit'
     - ! '#botparteh'
-  ext3:
-    channels:
-    - ! '#USS_Harbles'
   slashnet:
     channels:
     - ! '#savageworlds'
+    - ! '#DarkWizards'
+  rizon:
+    channels:
+    - ! '#VassalageOOC'
