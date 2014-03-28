@@ -54,8 +54,20 @@ slashnet:
     - zoklet.slashnet.org
     - irc.slashnet.org
 
-rizon:
+#rizon:
+#  aliases:
+#    - rizon.net
+#  servers:
+#    - irc.rizon.net
+
+darkmyst:
   aliases:
-    - rizon.net
+    - darmyst.org
   servers:
-    - irc.rizon.net
+    - irc.darkmyst.org
+
+synirc:
+  aliases:
+    - synirc
+  servers:
+    - irc.synirc.net

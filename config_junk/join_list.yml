@@ -7,30 +7,51 @@ servers:
   esper:
     channels:
     - ! '#ThePond'
-    - ! '#rphaven'
     - ! '#rollem'
     - ! '#artesof'
+    - ! '#savageworlds'
+    - ! '#mavgame'
+    - ! '#rphaven'
   snoonet:
     channels:
     - ! '#DnD'
-    - ! '#foxes'
     - ! '#rpg'
     - ! '#notarealchannel'
+    - ! '#dnd'
+    - ! '#foxes'
   freenode:
     channels:
     - ! '#uwtgig'
     - ! '##nerdchat'
     - ! '##jopgc'
     - ! '#lemocracy'
-    - ! '##nerdchat'
     - ! '##rpg'
     - ! '##jesseh'
     - ! '#reddit'
     - ! '#botparteh'
+    - ! '#starmine'
+    - ! '#hyperdnd1'
+    - ! '##starbound'
+    - ! '#beachedrolling'
+    - ! '#35e'
+    - ! '##roleplaying'
+    - ! '#megacraft'
+    - ! '#cat'
+    - ! '##starmine'
+    - ! '##roleplaying'
+    - ! '##starmine'
+    - ! '#starbound'
+    - ! '#starbound'
+    - ! '#starbound'
+    - ! '#starbound'
+    - ! '#reddit'
   slashnet:
     channels:
     - ! '#savageworlds'
     - ! '#DarkWizards'
-  rizon:
+  darkmyst:
     channels:
-    - ! '#VassalageOOC'
+    - ! '#FourStags'
+  synirc:
+    channels:
+    - ! '#letsplaydworldrightnow'
