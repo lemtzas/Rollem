@@ -5,8 +5,8 @@ module Cinch
   module Plugins
     class Channels
       include Cinch::Plugin
-      match /(?i)join(?:\s([A-Za-z0-9_]+))?(?:\s(#[#A-Za-z0-9_]+))/, method: :join
-      match /(?i)leave(?:\s([A-Za-z0-9_]+))?(?:\s(#[#A-Za-z0-9_]+))?/, method: :leave
+      match /(?i)join(?:\s(.+))?(?:\s([&#+!].+))/, method: :join
+      match /(?i)leave(?:\s(.+))?(?:\s([&#+!].+))?/, method: :leave
       match /(?i)nick\s([A-Za-z0-9_]+)/, method: :nick
 
       def join(m,server,channel)

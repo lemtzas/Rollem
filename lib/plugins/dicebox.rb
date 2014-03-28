@@ -7,9 +7,10 @@ module Cinch
     class Dicebox
       include Cinch::Plugin
 
-      @prefix = '' #kill that shitty prefix
+      @prefix = '' #kill the prefix
 
       match $full_dice_regex2
+      match $inline_dice_regex
       match /!statgen(?: (verbose))?.*/
       match "reload dice"
       match /shunt .*/
@@ -36,6 +37,16 @@ module Cinch
             res = Array.new
             puts $~.to_s
             $~.to_s.split(";").each do |roll|
+              puts roll
+              res.push Rollem::Dicebox::Roll.new(roll).to_s
+            end
+            #m.reply "I would roll...but that would be useful"
+            #m.reply "instead..." + dice.to_s
+            m.reply m.user.to_s + ", " + res.join(" ; d")
+          when $inline_dice_regex
+            res = Array.new
+            puts $~[0][0].to_s
+            $~[0][0].to_s.split(";").each do |roll|
               puts roll
               res.push Rollem::Dicebox::Roll.new(roll).to_s
             end
