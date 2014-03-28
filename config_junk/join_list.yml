@@ -1,36 +1,9 @@
 ---
 defaults:
-  nickname: Rollem
+  nickname: RollemDev
   authtype: nickserv
   password: mydicebringalltheboystotheyard
 servers:
-  esper:
-    channels:
-    - ! '#ThePond'
-    - ! '#rphaven'
-    - ! '#rollem'
-    - ! '#artesof'
   snoonet:
     channels:
-    - ! '#DnD'
-    - ! '#foxes'
-    - ! '#rpg'
-    - ! '#notarealchannel'
-  freenode:
-    channels:
-    - ! '#uwtgig'
-    - ! '##nerdchat'
-    - ! '##jopgc'
-    - ! '#lemocracy'
-    - ! '##nerdchat'
-    - ! '##rpg'
-    - ! '##jesseh'
-    - ! '#reddit'
-    - ! '#botparteh'
-  slashnet:
-    channels:
-    - ! '#savageworlds'
-    - ! '#DarkWizards'
-  rizon:
-    channels:
-    - ! '#VassalageOOC'
+    - ! '#rollemdev'

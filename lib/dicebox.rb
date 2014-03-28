@@ -10,7 +10,7 @@ reload './lib/ir_color'
 #whitespace woo
 $full_dice_regex = /^\s*\d*\s*d\s*\d+(d\s*\d+|k\s*\d+)?(\s*[+-]\s*(\s*\d*\s*d\s*\d+\s*(d\s*\d+|k\s*\d+)?|\s*\d+\s*))*/
 $full_dice_regex2 = /^\s*\d*\s*d\s*\d+(d\s*\d+|k\s*\d+)?(\s*[+-]\s*(\s*\d*\s*d\s*\d+\s*(d\s*\d+|k\s*\d+)?|\s*\d+\s*))*(;\s*\d*\s*d\s*\d+(d\s*\d+|k\s*\d+)?(\s*[+-]\s*(\s*\d*\s*d\s*\d+\s*(d\s*\d+|k\s*\d+)?|\s*\d+\s*))*)*/
-
+$inline_dice_regex = /.*\[(\s*\d*\s*d\s*\d+(d\s*\d+|k\s*\d+)?(\s*[+-]\s*(\s*\d*\s*d\s*\d+\s*(d\s*\d+|k\s*\d+)?|\s*\d+\s*))*(;\s*\d*\s*d\s*\d+(d\s*\d+|k\s*\d+)?(\s*[+-]\s*(\s*\d*\s*d\s*\d+\s*(d\s*\d+|k\s*\d+)?|\s*\d+\s*))*)*)\].*/
 module Rollem
   module Dicebox
     colors = { :max => :red }
