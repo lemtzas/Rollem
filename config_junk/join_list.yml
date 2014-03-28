@@ -1,5 +1,3 @@
-<<<<<<< HEAD
----
 defaults:
   nickname: Rollem
   authtype: nickserv
@@ -56,14 +54,3 @@ servers:
   synirc:
     channels:
     - ! '#letsplaydworldrightnow'
-=======
----
-defaults:
-  nickname: RollemDev
-  authtype: nickserv
-  password: mydicebringalltheboystotheyard
-servers:
-  snoonet:
-    channels:
-    - ! '#rollemdev'
->>>>>>> 11f42406f2963057f1ea25f8594ccf455fa7af04
