@@ -71,7 +71,7 @@ module Cinch
           begin
             a,b = rand(1..die),rand(1..die)
             sum = (a-b).abs
-          until sum > 0
+          end until sum >  0
           stats.push(sum)
           if verbose
             text = "| #{a} - #{b} | = #{sum}"
