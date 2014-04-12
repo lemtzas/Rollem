@@ -69,7 +69,7 @@ module Cinch
         stats = []
         (1..6).each do
           begin
-            a,b = rand(1..die),rand(1..die)
+            a,b = rand(1..6),rand(1..6)
             sum = (a-b).abs
           end until sum >  0
           stats.push(sum)
