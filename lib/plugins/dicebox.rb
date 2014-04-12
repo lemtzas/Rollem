@@ -76,7 +76,7 @@ module Cinch
           end until sum >  0
           stats.push(sum)
           if verbose
-            text = "| #{a} - #{b} |" + (rolls>1?" r#{rolls-1}":"")
+            text = "| #{a} - #{b} |" + (rolls>1?" r#{rolls-1}":"   ")
             m.reply "#{m.user.to_s}, #{text} => #{IRColor.bold.to_s}#{sum}#{IRColor.clear.to_s}"
           end
         end
