@@ -9,7 +9,7 @@ module Cinch
 
       @prefix = '' #kill the prefix
 
-      match /!spacegen(?: (verbose))?./, method: :spacegen
+      match /!spacegen(?: (verbose))?.*/, method: :spacegen
       match $full_dice_regex2
       match $inline_dice_regex
       match /!statgen(?: (verbose))?.*/
@@ -71,7 +71,7 @@ module Cinch
           begin
             a,b = rand(1..die),rand(1..die)
             sum = (a-b).abs
-          end until sum > 0
+          end until sum >  0
           stats.push(sum)
           if verbose
             text = "| #{a} - #{b} | = #{sum}"
