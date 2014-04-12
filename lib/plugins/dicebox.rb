@@ -68,13 +68,15 @@ module Cinch
         end
         stats = []
         (1..6).each do
+          rolls = 0
           begin
+            rolls = rolls + 1
             a,b = rand(1..6),rand(1..6)
             sum = (a-b).abs
           end until sum >  0
           stats.push(sum)
           if verbose
-            text = "| #{a} - #{b} | = #{sum}"
+            text = "| #{a} - #{b} |" + (rolls>1?" r#{rolls-1}":"")
             m.reply "#{m.user.to_s}, #{text} => #{IRColor.bold.to_s}#{sum}#{IRColor.clear.to_s}"
           end
         end
