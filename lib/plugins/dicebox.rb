@@ -9,7 +9,7 @@ module Cinch
 
       @prefix = '' #kill the prefix
 
-      match /!spacegen(?: (verbose))?./, method: :spacegen
+      match /!spacegen(?: (verbose))?.*/, method: :spacegen
       match $full_dice_regex2
       match $inline_dice_regex
       match /!statgen(?: (verbose))?.*/
