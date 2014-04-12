@@ -67,7 +67,7 @@ module Cinch
           m.reply "#{m.user.to_s} requested some stats:"
         end
         stats = []
-        (1..6).each do
+        (1..5).each do
           rolls = 0
           begin
             rolls = rolls + 1
