@@ -9,6 +9,7 @@ module Cinch
 
       @prefix = '' #kill the prefix
 
+      match /!spacegen(?: (verbose))?./, method: :spacegen
       match $full_dice_regex2
       match $inline_dice_regex
       match /!statgen(?: (verbose))?.*/
@@ -58,6 +59,27 @@ module Cinch
             m.reply "shunt it! " + IRColor.grey.to_s + sr.to_s + IRColor.clear.to_s + ' => ' + IRColor.bold.to_s + calculate(sr).to_s
 
         end
+      end
+
+      def spacegen(m,verbose='')
+        if verbose == "verbose"
+          verbose = true
+          m.reply "#{m.user.to_s} requested some stats:"
+        end
+        stats = []
+        (1..6).each do
+          begin
+            a,b = rand(1..die),rand(1..die)
+            sum = (a-b).abs
+          until sum > 0
+          stats.push(sum)
+          if verbose
+            text = "| #{a} - #{b} | = #{sum}"
+            m.reply "#{m.user.to_s}, #{text} => #{IRColor.bold.to_s}#{sum}#{IRColor.clear.to_s}"
+          end
+        end
+        stats.sort! {|x,y| y <=> x}
+        m.reply "#{m.user.to_s}, #{stats}"
       end
     end
 
