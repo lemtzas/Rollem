@@ -67,7 +67,7 @@ module Cinch
           m.reply "#{m.user.to_s} requested some stats:"
         end
         stats = []
-        (1..6).each do
+        (1..5).each do
           rolls = 0
           begin
             rolls = rolls + 1
@@ -76,7 +76,7 @@ module Cinch
           end until sum >  0
           stats.push(sum)
           if verbose
-            text = "| #{a} - #{b} |" + (rolls>1?" r#{rolls-1}":"")
+            text = "| #{a} - #{b} |" + (rolls>1?" r#{rolls-1}":"   ")
             m.reply "#{m.user.to_s}, #{text} => #{IRColor.bold.to_s}#{sum}#{IRColor.clear.to_s}"
           end
         end
