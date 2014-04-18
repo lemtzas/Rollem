@@ -46,8 +46,8 @@ module Cinch
             m.reply m.user.to_s + ", " + res.join(" ; d")
           when $inline_dice_regex
             res = Array.new
-            puts $~[0][0].to_s
-            $~[0][0].to_s.split(";").each do |roll|
+            puts $~[1].to_s
+            $~[1].to_s.split(";").each do |roll|
               puts roll
               res.push Rollem::Dicebox::Roll.new(roll).to_s
             end
