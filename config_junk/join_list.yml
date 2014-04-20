@@ -1,3 +1,4 @@
+---
 defaults:
   nickname: Rollem
   authtype: nickserv
@@ -11,39 +12,34 @@ servers:
     - ! '#savageworlds'
     - ! '#mavgame'
     - ! '#rphaven'
+    - ! '#fairra'
   snoonet:
     channels:
     - ! '#DnD'
     - ! '#rpg'
     - ! '#notarealchannel'
-    - ! '#dnd'
     - ! '#foxes'
   freenode:
     channels:
     - ! '#uwtgig'
-    - ! '##nerdchat'
     - ! '##jopgc'
     - ! '#lemocracy'
     - ! '##rpg'
     - ! '##jesseh'
-    - ! '#reddit'
     - ! '#botparteh'
-    - ! '#starmine'
     - ! '#hyperdnd1'
-    - ! '##starbound'
     - ! '#beachedrolling'
     - ! '#35e'
     - ! '##roleplaying'
     - ! '#megacraft'
     - ! '#cat'
-    - ! '##starmine'
     - ! '##roleplaying'
     - ! '##starmine'
-    - ! '#starbound'
-    - ! '#starbound'
-    - ! '#starbound'
-    - ! '#starbound'
     - ! '#reddit'
+    - ! '##starmine-gaming'
+    - ! '#cat^3'
+    - ! '##nerdchat'
+    - ! '#rimward'
   slashnet:
     channels:
     - ! '#savageworlds'
@@ -54,3 +50,6 @@ servers:
   synirc:
     channels:
     - ! '#letsplaydworldrightnow'
+  rizon:
+    channels:
+    - ! '#MagesofLiminus'

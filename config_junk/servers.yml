@@ -54,11 +54,11 @@ slashnet:
     - zoklet.slashnet.org
     - irc.slashnet.org
 
-#rizon:
-#  aliases:
-#    - rizon.net
-#  servers:
-#    - irc.rizon.net
+rizon:
+  aliases:
+    - rizon.net
+  servers:
+    - irc.rizon.net
 
 darkmyst:
   aliases:
